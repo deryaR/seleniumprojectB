@@ -30,6 +30,19 @@ public class BasicNavigations {
         driver.navigate().forward();
 
 
+        //Stop code execution for 3 seconds
+        Thread.sleep(3000);
+
+        //use selenium to navigate refresh
+        driver.navigate().refresh();
+
+        //Stop code execution for 3 seconds
+        Thread.sleep(3000);
+
+        //use navigat().to():
+        driver.navigate().to("http://www.google.com");
+
+
 
     }
 }

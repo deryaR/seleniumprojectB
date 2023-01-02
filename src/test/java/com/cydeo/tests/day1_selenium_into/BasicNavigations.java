@@ -17,6 +17,10 @@ public class BasicNavigations {
         //3- Go to "https://wwww.tesla.com"
         driver.get("https://www.tesla.com");
 
+        //get the little of the page
+        String currentTitle = driver.getTitle();
+        System.out.println("currentTitle = " + currentTitle);
+
         //Stop code execution for 3 seconds
         Thread.sleep(3000);
 
@@ -42,11 +46,11 @@ public class BasicNavigations {
         //use navigat().to():
         driver.navigate().to("http://www.google.com");
 
+        currentTitle = driver.getTitle();
 
-        //get the little of the page
+
        // System.out.println("driver.getTitle() = " + driver.getTitle());
-
-        String currentTitle = driver.getTitle();
+        System.out.println("currentTitle = " + currentTitle);
 
 
 

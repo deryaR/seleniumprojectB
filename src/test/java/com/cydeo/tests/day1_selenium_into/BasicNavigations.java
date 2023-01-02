@@ -43,6 +43,12 @@ public class BasicNavigations {
         driver.navigate().to("http://www.google.com");
 
 
+        //get the little of the page
+       // System.out.println("driver.getTitle() = " + driver.getTitle());
+
+        String currentTitle = driver.getTitle();
+
+
 
     }
 }

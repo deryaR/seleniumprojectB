@@ -20,8 +20,8 @@ public class HomeWork_3 {
         driver.get("https://google.com ");
 
         //   3- Click to Gmail from top right.
-        WebElement abTestLink =driver.findElement(By.linkText("Gmail"));
-        abTestLink.click();
+        WebElement mailTestLink =driver.findElement(By.linkText("Gmail"));
+        mailTestLink.click();
 
 
       //  4- Verify title contains:

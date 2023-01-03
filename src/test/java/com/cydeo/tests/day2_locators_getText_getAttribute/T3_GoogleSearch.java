@@ -16,6 +16,7 @@ public class T3_GoogleSearch {
         driver.manage().window().maximize();
 
 
+
        //  2- Go to: https://google.com
         driver.get("https://google.com");
 
@@ -27,6 +28,15 @@ public class T3_GoogleSearch {
 
       //  5- Verify title:
       //  Expected: Title should start with “apple” word
+        String expectedInTitle = "apple";
+        String actualTitle = driver.getTitle();
+
+        if (actualTitle.startsWith(expectedInTitle)){
+            System.out.println("Title verification PASSED! ");
+        }else {
+            System.out.println("Title verification FAILED!!! ");
+        }
+
 
 
     }

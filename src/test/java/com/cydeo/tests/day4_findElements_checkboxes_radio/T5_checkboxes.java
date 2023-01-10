@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import java.util.concurrent.TimeUnit;
 
 public class T5_checkboxes {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
           //1. Go to http://practice.cydeo.com/checkboxes
         WebDriver driver  = WebDriverFactory.getDriver("chrome");
@@ -38,6 +38,9 @@ public class T5_checkboxes {
         checkbox2.click();
 
          //6. Confirm checkbox #1 is SELECTED.
-         //7. Confirm checkbox #2 is NOT selected.
+        System.out.println("checkbox1.isSelected(), expecting true = " + checkbox1.isSelected());
+
+        //7. Confirm checkbox #2 is NOT selected.
+        System.out.println("checkbox2.isSelected(),expecting false = " + checkbox2.isSelected());
     }
 }

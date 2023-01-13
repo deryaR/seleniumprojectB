@@ -8,5 +8,4 @@ public class TestNG_Intro {
         System.out.println("Test 1 is running...");
     }
 
-    }
 }
